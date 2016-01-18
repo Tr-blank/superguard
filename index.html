@@ -33,6 +33,8 @@
   <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/index.min.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
    <!-- 自動增加css3前缀 -->
  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>-->
   <!-- 讓ie8以下支援html5語意標籤 -->
@@ -46,20 +48,108 @@
   </head>
 
 <body>
-<header>
+   <header>
     <div class="wrapper">
-
-      <h1><a href="index.html"><span class="logo" ><img src="img/logo.png"></span>YIELD TECHNOLOGY CO., LTD.</a></h1>
-
+        <div class="logo">
+            <a href="index.html"><img src="img/logo.png"></a>
+        </div>
+            <h1><a href="index.html">YIELD TECHNOLOGY CO., LTD.</a></h1>
+            <h2><a href="index.html">SuperH 有關專利與著作權聲明</a></h2>
+    <!--     <div class="language">
+            <a href="/">簡體</a>
+            <a href="/">繁體</a>
+            <a href="/">English</a>
+        </div> -->
+        <div class='header-inform'>
+            <i class="fa fa-envelope fa-fw"></i>HELLO@YTC.COM.TW
+            <i class="fa fa-phone-square fa-fw"></i>886-3-4533655
+        </div>
     </div>
+ <!--    <nav class="">
+        <div class="wrapper tablebox">
+            <div class="table-td">
+                <a href="about-superh.html">The Revolution of the Helicopters</a>
+            </div>
+            <div class="table-td">
+                <a href="about-design.html">The Design</a>
+            </div>
+            <div class="table-td">
+                <a href="about-patent.html">Patented Technologies</a>
+            </div>
+            <div class="table-td">
+                <a href="about-work.html">How is Work</a>
+            </div>
+            <div class="table-td">
+                <a href="about-system.html">Communication and Control System</a>
+            </div>
+            <div class="table-td">
+                <a href="about-auto.html">Auto-Pilot Management</a>
+            </div>
+            <div class="table-td">
+                <a href="about-ground.html">Ground Station</a>
+            </div>
+            <div class="table-td">
+                <a href="about-safety.html">Safety</a>
+            </div>
+            <div class="table-td">
+                <a href="about-product.html">現有產品 HELICYCLE</a>
+            </div>
+            <div class="table-td">
+                <a href="index.html">SuperH 有關專利與著作權聲明</a>
+            </div>
+        </div>
+    </nav> -->
 </header>
-  <main>
-    <div class="wrapper">
-      <nav class="floatbox">
-          <a href="index-superh.html">SuperH</a>
-          <a href="http://www.superguard.com.tw/index.html">SuperGuard</a>
-      </nav>
-    </div>
+   <main>
+     <div class="wrapper floatbox">
+        <a class="float-left" href="about-superh.html">
+          <span class="pic"><img src="img/design1.jpg"></span>
+          <span class="title">The Revolution of the Helicopters</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>22世紀直升機的重大革命</span>
+          <span class="more">詳細</span></a>
+        <a class="float-left" href="about-design.html">
+          <span class="pic"><img src="img/design1.jpg"></span>
+          <span class="title">The Design</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>四旋翼三人座直升機</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>Ｈ型結構之直升機設計</span>
+          <span class="more">詳細</span></a>
+        <a class="float-left" href="about-patent.html">
+          <span class="pic"><img src="img/patent3.jpg"></span>
+          <span class="title">Patented Technologies</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>Zero-Friction Linear Motor Fly-By-Wire System</span>
+          <span class="more">詳細</span></a>
+        <a class="float-left" href="about-work.html">
+          <span class="pic"><img src="img/design1.jpg"></span>
+          <span class="title">How is Work</span><span class="more">詳細</span></a>
+        <a class="float-left" href="about-system.html">
+          <span class="pic"><img src="img/communication1.jpg"></span>
+          <span class="title">Communication and Control System</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>Wireless</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>500km Microwave Internet Access</span>
+          <span class="more">詳細</span></a>
+        <a class="float-left" href="about-auto.html">
+          <span class="pic"><img src="img/auto1.png"></span>
+          <span class="title">Auto-Pilot Management</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>Key Features</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>Pre-set Check-Point from the SKY</span>
+          <span class="more">詳細</span></a>
+        <a class="float-left" href="about-ground.html">
+          <span class="pic"><img src="img/ground1.jpg"></span>
+          <span class="title">Ground Station</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>Ground Station</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>Blade Server, UPS and Battery Bank</span>
+          <span class="item"><i class="fa fa-angle-right fa-fw"></i>Control Center Over-View</span>
+          <span class="more">詳細</span></a>
+        <a class="float-left" href="about-safety.html">
+          <span class="pic"><img src="img/safety1.jpg"></span>
+          <span class="title">Safety</span><span class="more">詳細</span></a>
+        <a class="float-left" href="about-product.html">
+          <span class="pic"><img src="img/safety3.png"></span>
+          <span class="title">現有產品 HELICYCLE</span><span class="more">詳細</span></a>
+        <a class="float-left" href="index-superh.html">
+          <span class="pic"><img src="img/patent01.jpg"></span>
+          <span class="title">SuperH 有關專利與著作權聲明</span><span class="more">詳細</span></a>
+      </div>
   </main>
    <footer>
 	<div class="wrapper floatbox">
@@ -86,6 +176,17 @@
 		© Copyright 2016 YIELD TECHNOLOGY CO., LTD.
 	</div>
 </footer>
+    <script>
+    $(function() {
+      var bulidBox = $('main .floatbox').masonry({
+        gutter:0 ,
+        itemSelector: '.float-left',
+      });
+      bulidBox.imagesLoaded().progress( function() {
+        bulidBox.masonry('layout');
+      });
+    });
+    </script>
 </body>
 
 </html>
